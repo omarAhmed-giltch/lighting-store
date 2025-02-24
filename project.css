@@ -1,0 +1,74 @@
+body {
+    background-color: #000000;
+    color: white;
+    margin: 20px;
+    text-align: right; /* Right-align text for Arabic */
+    direction: rtl; /* Set text direction to right-to-left */
+}
+h1 {
+    text-align: center; /* Center-align heading */
+    font-family: 'Amiri', serif; /* Arabic font for heading */
+    color: #ffffff; /* Gold color for the heading */
+}
+.arabic-text {
+    font-family: 'Cairo', serif; /* Arabic font */
+}
+.english-text {
+    font-family: 'Lato', sans-serif; /* English font */
+}
+
+
+.top-center-image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: 100%;
+}
+.highlight {
+    background-color: rgb(255, 255, 255); /* Highlight color */
+    color: rgb(0, 0, 0); /* Text color */
+    padding: 2px 4px; /* Padding to make the highlight more noticeable */
+    border-radius: 3px; /* Rounded corners for a smoother look */
+}
+.highlight2 {
+  background-color: #738bd8; /* Highlight color */
+  color: #ffffff; /* Text color */
+  padding: 2px 4px; /* Padding to make the highlight more noticeable */
+  border-radius: 3px; /* Rounded corners for a smoother look */
+}
+  .scroll {
+    scroll-behavior: smooth;
+  }
+  
+
+.top-center-image img {
+  width: 24%;
+  height: auto;
+}
+.special-word {
+  color: rgb(255, 255, 255);
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.special-word:hover {
+  color: rgb(43, 255, 0); /* Change the color on hover */
+}
+
+.special-word::after {
+  content: attr(title);
+  position: absolute;
+  left: 0;
+  bottom: -1.5em;
+  background-color: yellow;
+  padding: 5px;
+  border-radius: 3px;
+  white-space: nowrap;
+  display: none;
+}
+
+.special-word:hover::after {
+  display: block; /* Show the tooltip on hover */
+}
